@@ -1,0 +1,127 @@
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+
+    background-size: cover;
+  background-image: url(background.png);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 95%;
+}
+
+.sidenav a {
+  padding: 12px 8px 15px 40px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#heading1
+{
+   font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    letter-spacing: 1.5px;
+    color: #072f39;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+#heading2
+{
+    margin-left: 470px !important;
+    margin-top: -20px;
+}
+#heading3
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    color: #072f39 !important;
+    font-weight: 100;
+    letter-spacing: 5px;
+   
+}
+#heading4
+{
+     text-decoration: none;
+    color: #072f39;     
+}
+#heading4:hover
+{
+    color: #2e859b;
+}
+#heading
+{
+    margin-left: 320px;
+    margin-top: 220px;
+}
+.img1
+{
+    width: 12%;
+    display: inline;
+}
+#message
+{
+    margin-left: 510px;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 1px 1px 10px 0.5px #b1b5aa;
+    background: #f8f1f1;
+    font-size: x-large;
+    padding-left: 10px;
+    font-style: italic;
+    font-family: monospace;
+}
+.hide
+{
+ display: none !important;
+}
+#message:focus
+{
+    outline: none;
+}
+#mybutton
+{
+    margin-left: 825px;
+    margin-top: 20px;
+    background: #f2e9dd;
+    color: #072f39;
+}
+#mybutton:hover
+{
+    background: #d9d2c9;
+}
