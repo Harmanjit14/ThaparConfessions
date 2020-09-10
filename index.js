@@ -1,4 +1,4 @@
-    function openNav() {
+  function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -21,11 +21,9 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 var firestore = firebase.firestore(); 
-let publish = document.getElementById("mybutton");
 const confess = document.getElementById("message");
-let btn = document.getElementById("faltu"); 
-const db = firebase.firestore();
-const var2 = document.getElementById("content");
+const publish = document.getElementById("mybutton");
+ const db = firebase.firestore();
 publish.addEventListener("click",function(){
     if(confess.value=="")
         {
@@ -40,19 +38,17 @@ publish.addEventListener("click",function(){
     alert("Confession Published!!")
     }
 })
-
-
-btn.addEventListener("click",function(){
+function view(){
+   
     db.collection("confessions").onSnapshot(function(querySnapshot){
         querySnapshot.docChanges().forEach(function(change){
             if(change.type=="added"){
-                var2.innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
+                document.querySelector("#con").innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
             }
         })
     })
     console.log("Harman bhadwa")
     
-})
-
+}
 
 
