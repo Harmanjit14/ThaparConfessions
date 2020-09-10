@@ -1,4 +1,4 @@
-function openNav() {
+    function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -20,21 +20,39 @@ const firebaseConfig = {
   measurementId: "G-73FN0K3FF2"
 };
 firebase.initializeApp(firebaseConfig);
-    var firestore = firebase.firestore(); 
-const title = document.getElementById("heading4");
-const message = document.getElementById("message").classList;
-const button = document.getElementById("mybutton").classList;
-title.addEventListener("click",function(){
-    if(message.contains("hide")){
-        message.remove("hide");
-        button.remove("hide");
-    }
-})
-const publish = document.getElementById("mybutton");
+var firestore = firebase.firestore(); 
+let publish = document.getElementById("mybutton");
 const confess = document.getElementById("message");
+let btn = document.getElementById("faltu"); 
+const db = firebase.firestore();
+const var2 = document.getElementById("content");
 publish.addEventListener("click",function(){
-    firestore.collection('confessions').add({
+    if(confess.value=="")
+        {
+        alert("Cannot publish empty field")
+        return false;
+       
+        }
+    else{
+        db.collection('confessions').add({
         text: confess.value
     })
     alert("Confession Published!!")
+    }
 })
+
+
+btn.addEventListener("click",function(){
+    db.collection("confessions").onSnapshot(function(querySnapshot){
+        querySnapshot.docChanges().forEach(function(change){
+            if(change.type=="added"){
+                var2.innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
+            }
+        })
+    })
+    console.log("Harman bhadwa")
+    
+})
+
+
+

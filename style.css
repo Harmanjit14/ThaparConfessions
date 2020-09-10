@@ -31,6 +31,7 @@ body {
 
 .sidenav a:hover {
   color: #f1f1f1;
+    text-decoration: none;
 }
 
 .sidenav .closebtn {
@@ -66,22 +67,13 @@ body {
 }
 #heading3
 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 50px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: #072f39 !important;
     font-weight: 100;
     letter-spacing: 5px;
    
-}
-#heading4
-{
-     text-decoration: none;
-    color: #072f39;     
-}
-#heading4:hover
-{
-    color: #2e859b;
 }
 #heading
 {
@@ -93,22 +85,25 @@ body {
     width: 12%;
     display: inline;
 }
+.main
+{
+    
+    font-size: xx-large;
+    font-family: Pacifico;
+    padding: 5px;
+
+}
 #message
 {
-    margin-left: 510px;
-    margin-top: 50px;
-    width: 400px;
-    height: 300px;
+    margin-left: 520px;
+    margin-top: 40px;
+    width: 470px;
+    height: 360px;
     box-shadow: 1px 1px 10px 0.5px #b1b5aa;
     background: #f8f1f1;
     font-size: x-large;
     padding-left: 10px;
-    font-style: italic;
-    font-family: monospace;
-}
-.hide
-{
- display: none !important;
+    font-family:sans-serif;
 }
 #message:focus
 {
@@ -116,12 +111,29 @@ body {
 }
 #mybutton
 {
-    margin-left: 825px;
+    margin-left: 910px;
     margin-top: 20px;
-    background: #f2e9dd;
-    color: #072f39;
+    background: #ffdbdb;
+    color: #94251f;
+    border-color: #f7cbbc;
 }
 #mybutton:hover
 {
-    background: #d9d2c9;
+    background: #ce9090;
+}
+#mybutton:focus{
+    box-shadow: none;
+}
+.content1
+{
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    box-shadow: 1px 1px 10px 0.5px;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .size {
+    width:100%;
+  }
 }
