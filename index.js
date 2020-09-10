@@ -24,7 +24,10 @@ var firestore = firebase.firestore();
 const confess = document.getElementById("message");
 const publish = document.getElementById("mybutton");
  const db = firebase.firestore();
+
 publish.addEventListener("click",function(){
+    var d = new Date();
+    var n = d.getTime();
     if(confess.value=="")
         {
         alert("Cannot publish empty field")
@@ -33,14 +36,15 @@ publish.addEventListener("click",function(){
         }
     else{
         db.collection('confessions').add({
-        text: confess.value
+        text: confess.value,
+        time: n
     })
+        console.log(n)
     alert("Confession Published!!")
     }
 })
 function view(){
-   
-    db.collection("confessions").onSnapshot(function(querySnapshot){
+    db.collection("confessions").orderBy("time","desc").onSnapshot(function(querySnapshot){
         querySnapshot.docChanges().forEach(function(change){
             if(change.type=="added"){
                 document.querySelector("#con").innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
@@ -48,7 +52,6 @@ function view(){
         })
     })
     console.log("Harman bhadwa")
-    
 }
 
 
