@@ -114,6 +114,9 @@ body {
     margin-left: 910px;
     margin-top: 20px;
     background: #D4D9E3;
+    font-weight: 200;
+    width: 80px;
+    height: 50px;
     color: #000;
     border-color: #7392D1;
 }
@@ -161,9 +164,17 @@ body {
     font-size: 33px;
     color:  #D4D9E5;
 }
-#des
+.des
 {
     margin-left: 130px;
+    padding-top: 50px;
+    font-size: 22px;
+    color: #D4D9E3;
+}
+.des1
+{
+    margin-left: 600px;
+    margin-top: 190;
     padding-top: 50px;
     font-size: 22px;
     color: #D4D9E3;
@@ -176,10 +187,26 @@ body {
 #faltu
 {
     margin-left: 750px;
-    margin-top: 570px;
+    width: 70px;
+    height: 40px;
+    margin-top: 540px;
     padding: 0px 5px 0px 5px;
 }
 #faltu:hover
 {
     background: #D4D9E3;
+}
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+.img2
+{
+    width: 3%;
 }
