@@ -1,9 +1,8 @@
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
-
-    background-size: cover;
-  background-image: url(background.png);
+  background: #364051 !important;
+    
 }
 
 .sidenav {
@@ -56,7 +55,7 @@ body {
    font-family: 'Pacifico', cursive;
     font-size: 90px;
     letter-spacing: 1.5px;
-    color: #072f39;
+    color: #D4D9E3;
     font-weight: 100;
     letter-spacing: 5px;
 }
@@ -70,7 +69,7 @@ body {
     font-family: 'Comfortaa', cursive;
     font-size: 50px;
     letter-spacing: 1px;
-    color: #072f39 !important;
+    color: #D4D9E3 !important;
     font-weight: 100;
     letter-spacing: 5px;
    
@@ -78,7 +77,7 @@ body {
 #heading
 {
     margin-left: 320px;
-    margin-top: 220px;
+    margin-top: 150px;
 }
 .img1
 {
@@ -91,19 +90,20 @@ body {
     font-size: xx-large;
     font-family: Pacifico;
     padding: 5px;
-
+    
 }
 #message
 {
-    margin-left: 520px;
+      margin-left: 520px;
     margin-top: 40px;
     width: 470px;
     height: 360px;
-    box-shadow: 1px 1px 10px 0.5px #b1b5aa;
-    background: #f8f1f1;
+    box-shadow: 1px 1px 10px 0.5px #000;
+    background: #8EB4F6;
     font-size: x-large;
+    border-color: #8EB4F6;
     padding-left: 10px;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 #message:focus
 {
@@ -113,28 +113,73 @@ body {
 {
     margin-left: 910px;
     margin-top: 20px;
-    background: #ffdbdb;
-    color: #94251f;
-    border-color: #f7cbbc;
+    background: #D4D9E3;
+    color: #000;
+    border-color: #7392D1;
 }
 #mybutton:hover
 {
-    background: #ce9090;
+    background: #5874B0;
 }
 #mybutton:focus{
     box-shadow: none;
 }
 .content1
 {
-    width: 300px;
-    height: auto;
+    overflow: auto;
+    text-align: justify;
+    width: 333px;
+    height: 400px;
     background: #fff;
-    padding: 30px;
     box-shadow: 1px 1px 10px 0.5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    background: #8EB4F6;
+    
 }
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .size {
     width:100%;
   }
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .size1 {
+    width:40%;
+  }
+}
+#home
+{
+    color: #D4D9E3 !important;
+}
+#home:hover
+{
+    text-decoration: none;
+    font-size: 33px;
+    color:  #D4D9E5;
+}
+#des
+{
+    margin-left: 130px;
+    padding-top: 50px;
+    font-size: 22px;
+    color: #D4D9E3;
+}
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#faltu
+{
+    margin-left: 750px;
+    margin-top: 570px;
+    padding: 0px 5px 0px 5px;
+}
+#faltu:hover
+{
+    background: #D4D9E3;
 }

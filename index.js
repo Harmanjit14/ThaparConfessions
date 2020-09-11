@@ -37,21 +37,20 @@ publish.addEventListener("click",function(){
     else{
         db.collection('confessions').add({
         text: confess.value,
-        time: n
+        time: 0-n
     })
         console.log(n)
     alert("Confession Published!!")
     }
 })
 function view(){
-    db.collection("confessions").orderBy("time","desc").onSnapshot(function(querySnapshot){
+    db.collection("confessions").orderBy("time","asc").limit(15).onSnapshot(function(querySnapshot){
         querySnapshot.docChanges().forEach(function(change){
             if(change.type=="added"){
-                document.querySelector("#con").innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
+                document.querySelector(".content").innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
             }
         })
     })
-    console.log("Harman bhadwa")
 }
 
 
