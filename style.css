@@ -18,6 +18,9 @@ body {
   padding-top: 60px;
   opacity: 95%;
 }
+.col-lg-10{
+  height: 100%;
+}
 
 .sidenav a {
   padding: 12px 8px 15px 40px;
@@ -28,7 +31,7 @@ body {
   transition: 0.3s;
 }
 .col-lg-3{
-  background: #8EB4F6;
+  /* background: #8EB4F6; */
   margin:2%;
   height:90px;
 }
@@ -54,6 +57,15 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+.jumbotron{
+  font-family: 'Pacifico', cursive;
+  font-size: 90px;
+  letter-spacing: 1.5px;
+  color: #D4D9E3;
+  font-weight: 100;
+  background: #364051 !important;
+  letter-spacing: 5px;
 }
 #heading1
 {
@@ -97,17 +109,21 @@ body {
     padding: 5px;
     
 }
+.row{
+height:50%;
+
+}
+.container{
+  height: 32rem;
+}
 #message
 {
-      margin-left: 520px;
-    margin-top: 40px;
-    width: 470px;
-    height: 360px;
+    height:100% !important;
     box-shadow: 1px 1px 10px 0.5px #000;
     background: #8EB4F6;
     font-size: x-large;
     border-color: #8EB4F6;
-    padding-left: 10px;
+
     font-family: sans-serif;
 }
 #message:focus
@@ -116,14 +132,12 @@ body {
 }
 #mybutton
 {
-    margin-left: 910px;
-    margin-top: 20px;
-    background: #D4D9E3;
+    margin-left: 10%;
+    margin-top: 10%;
+
     font-weight: 200;
-    width: 80px;
-    height: 50px;
-    color: #000;
-    border-color: #7392D1;
+   
+  
 }
 #mybutton:hover
 {
@@ -177,12 +191,19 @@ body {
     color: #D4D9E3;
 }
 .des1
-{
-    margin-left: 600px;
+{ position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+text-align: center;
+    /* margin-left: 600px;
     margin-top: 190;
-    padding-top: 50px;
+    padding-top: 50px; */
     font-size: 22px;
     color: #D4D9E3;
+}
+.des1 a{
+  color:#D4D9E3 ;
 }
 .content
 {
@@ -191,11 +212,7 @@ body {
 }
 #faltu
 {
-    margin-left: 750px;
-    width: 70px;
-    height: 40px;
-    margin-top: 540px;
-    padding: 0px 5px 0px 5px;
+ 
 }
 #faltu:hover
 {

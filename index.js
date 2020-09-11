@@ -3,7 +3,8 @@
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
-
+var colorString= ["#3acbd9","#e1e228","#ee665e","#3bb273"]
+// const view = document.getElementById("view");
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
@@ -47,10 +48,12 @@ function view(){
     db.collection("confessions").orderBy("time","asc").limit(15).onSnapshot(function(querySnapshot){
         querySnapshot.docChanges().forEach(function(change){
             if(change.type=="added"){
-                document.querySelector(".row").innerHTML += "<div class='col-lg-3'><p>" + change.doc.data().text + "</p></div>"
+                document.querySelector(".row").innerHTML += `<div class='col-lg-3' style=background-color:${colorString[Math.floor(Math.random()*4)]}><p>` + change.doc.data().text + "</p></div>"
             }
         })
     })
+ 
+
 }
 
 
