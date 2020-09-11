@@ -27,6 +27,11 @@ body {
   display: block;
   transition: 0.3s;
 }
+.col-lg-3{
+  background: #8EB4F6;
+  margin:2%;
+  height:90px;
+}
 
 .sidenav a:hover {
   color: #f1f1f1;

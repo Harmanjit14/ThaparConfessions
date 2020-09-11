@@ -47,7 +47,7 @@ function view(){
     db.collection("confessions").orderBy("time","asc").limit(15).onSnapshot(function(querySnapshot){
         querySnapshot.docChanges().forEach(function(change){
             if(change.type=="added"){
-                document.querySelector(".content").innerHTML += "<div class='content1'><p>" + change.doc.data().text + "</p></div>"
+                document.querySelector(".row").innerHTML += "<div class='col-lg-3'><p>" + change.doc.data().text + "</p></div>"
             }
         })
     })
