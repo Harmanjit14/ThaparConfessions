@@ -146,6 +146,15 @@ height:50%;
 #mybutton:focus{
     box-shadow: none;
 }
+.hide{
+  display: none;
+}
+#view{
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: 40%;
+}
 .content1
 {
     overflow: auto;
@@ -210,14 +219,8 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
 }
-#faltu
-{
- 
-}
-#faltu:hover
-{
-    background: #D4D9E3;
-}
+
+
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }

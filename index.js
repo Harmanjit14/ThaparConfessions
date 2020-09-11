@@ -4,7 +4,7 @@
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 var colorString= ["#3acbd9","#e1e228","#ee665e","#3bb273"]
-// const view = document.getElementById("view");
+
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
@@ -53,7 +53,6 @@ function view(){
         })
     })
  
-
 }
 
 
