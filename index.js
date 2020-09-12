@@ -52,7 +52,7 @@ function view(){
             }
         })
     })
-    this.disabled=true;
+  document.getElementById("view").classList.add("hide");
  
 }
 
