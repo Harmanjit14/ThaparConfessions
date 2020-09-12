@@ -45,7 +45,7 @@ publish.addEventListener("click",function(){
     }
 })
 function view(){
-    db.collection("confessions").orderBy("time","asc").limit(15).onSnapshot(function(querySnapshot){
+    db.collection("confessions").orderBy("time","asc").limit(50).onSnapshot(function(querySnapshot){
         querySnapshot.docChanges().forEach(function(change){
             if(change.type=="added"){
                 document.querySelector(".row").innerHTML += `<div class='col-lg-3' style=background-color:${colorString[Math.floor(Math.random()*4)]}><p>` + change.doc.data().text + "</p></div>"
