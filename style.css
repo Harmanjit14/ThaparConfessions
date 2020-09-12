@@ -103,12 +103,15 @@ body {
 }
 .main
 {
-    
+
     font-size: xx-large;
     font-family: Pacifico;
     padding: 5px;
     
 }
+/* .scrolled{
+  color: white;
+} */
 .row{
 height:50%;
 

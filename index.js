@@ -52,7 +52,15 @@ function view(){
             }
         })
     })
+    this.disabled=true;
  
 }
 
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $("#nav-button");
+      $nav.toggleClass("scrolled", $(this).scrollTop() > 20);
+    });
 
+
+  });
